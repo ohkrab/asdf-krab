@@ -51,6 +51,8 @@ install_version() {
   local version="$2"
   local install_path="$3"
 
+  echo "Install type: $install_type, version: $version, install_path: $install_path"
+
   if [ "$install_type" != "version" ]; then
     fail "asdf-$TOOL_NAME supports release installs only"
   fi
@@ -59,6 +61,8 @@ install_version() {
     mkdir -p "$install_path"
     echo "cp -r $ASDF_DOWNLOAD_PATH/* $install_path"
     cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
+    ls $ASDF_DOWNLOAD_PATH/ -la
+    ls $install_path/ -la
 
     local tool_cmd
     tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
