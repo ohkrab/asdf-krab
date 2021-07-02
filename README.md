@@ -17,7 +17,6 @@
 # Dependencies
 
 - `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
 
 # Install
 
@@ -25,6 +24,8 @@ Plugin:
 
 ```shell
 asdf plugin add krab
+# or
+asdf plugin add krab git@github.com:ohkrab/asdf-krab.git
 # or
 asdf plugin add krab https://github.com/qbart/asdf-krab.git
 ```
