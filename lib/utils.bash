@@ -64,8 +64,8 @@ install_version() {
     mkdir -p "$install_path"
     # echo "cp -r $ASDF_DOWNLOAD_PATH/ $install_path"
     cp "$ASDF_DOWNLOAD_PATH"/$tool_cmd "$install_path"
-    ls $ASDF_DOWNLOAD_PATH/ -la
-    ls $install_path/ -la
+    # ls -la "$ASDF_DOWNLOAD_PATH"
+    # ls -la "$install_path"
 
     test -x "$install_path/$tool_cmd" || fail "Expected $install_path/$tool_cmd to be executable."
 
