@@ -15,7 +15,11 @@ jobs:
         os: [ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - name: asdf_plugin_test
-        uses: asdf-vm/actions/plugin-test@v1
-        with:
-          command: krab version
+      - run: git clone https://github.com/asdf-vm/asdf.git
+      - run: . asdf/asdf.sh
+      - run: asdf plugin add krab https://github.com/qbart/asdf-krab.git
+      - run: asdf install krab 0.2.2
+      - run: asdf global krab 0.2.2
+
+      - name: test
+        run: krab version
