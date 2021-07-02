@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-krab ![Build](https://github.com/qbart/asdf-krab/workflows/Build/badge.svg) ![Lint](https://github.com/qbart/asdf-krab/workflows/Lint/badge.svg)
+# asdf-krab ![Build](https://github.com/ohkrab/asdf-krab/workflows/Build/badge.svg) ![Lint](https://github.com/ohkrab/asdf-krab/workflows/Lint/badge.svg)
 
 [krab](https://ohkrab.dev) plugin for the [asdf version manager](https://asdf-vm.com).
 
@@ -27,7 +27,7 @@ asdf plugin add krab
 # or
 asdf plugin add krab git@github.com:ohkrab/asdf-krab.git
 # or
-asdf plugin add krab https://github.com/qbart/asdf-krab.git
+asdf plugin add krab https://github.com/ohkrab/asdf-krab.git
 ```
 
 krab:
@@ -53,7 +53,7 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/qbart/asdf-krab/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/ohkrab/asdf-krab/graphs/contributors)!
 
 # License
 
