@@ -16,7 +16,7 @@
 
 # Dependencies
 
-- `bash`, `curl`, `tar`: generic POSIX utilities.
+- `bash`, `curl`, `tar`, `uname`: generic POSIX utilities.
 
 # Install
 
@@ -25,9 +25,9 @@ Plugin:
 ```shell
 asdf plugin add krab
 # or
-asdf plugin add krab git@github.com:ohkrab/asdf-krab.git
-# or
 asdf plugin add krab https://github.com/ohkrab/asdf-krab.git
+# or
+asdf plugin add krab git@github.com:ohkrab/asdf-krab.git
 ```
 
 krab:
@@ -43,7 +43,7 @@ asdf install krab latest
 asdf global krab latest
 
 # Now krab commands are available
-krab version
+krab --version
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to

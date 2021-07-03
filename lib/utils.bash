@@ -4,7 +4,7 @@ set -euo pipefail
 
 GH_REPO="https://github.com/ohkrab/krab"
 TOOL_NAME="krab"
-TOOL_TEST="krab version"
+TOOL_TEST="krab --version"
 
 fail() {
   echo -e "asdf-$TOOL_NAME: $*"
